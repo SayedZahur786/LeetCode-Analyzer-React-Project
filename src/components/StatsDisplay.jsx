@@ -54,7 +54,7 @@ function StatsDisplay() {
       legend: {
         position: 'bottom',
         labels: {
-          color: 'rgb(107, 114, 128)',
+          color: '#FFFFFF',
           font: {
             size: 12,
             family: "'Inter', sans-serif",
