@@ -54,7 +54,7 @@ function StatsDisplay() {
       legend: {
         position: 'bottom',
         labels: {
-          color: '#FFFFFF',
+          color: 'rgb(107, 114, 128)',
           font: {
             size: 12,
             family: "'Inter', sans-serif",
@@ -165,40 +165,41 @@ function StatsDisplay() {
               </tr>
             </thead>
             <tbody className="bg-white dark:bg-dark-200 divide-y divide-gray-200 dark:divide-gray-700">
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="flex items-center">
-                    <div className="h-3 w-3 rounded-full bg-success-500 mr-2"></div>
-                    <span className="font-medium dark:text-gray-200">Easy</span>
-                  </div>
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{userData.easySolved}</td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{userData.totalEasy}</td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{easySolvedPercentage}%</td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="flex items-center">
-                    <div className="h-3 w-3 rounded-full bg-warning-500 mr-2"></div>
-                    <span className="font-medium dark:text-gray-200">Medium</span>
-                  </div>
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{userData.mediumSolved}</td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{userData.totalMedium}</td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{mediumSolvedPercentage}%</td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="flex items-center">
-                    <div className="h-3 w-3 rounded-full bg-error-500 mr-2"></div>
-                    <span className="font-medium dark:text-gray-200">Hard</span>
-                  </div>
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{userData.hardSolved}</td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{userData.totalHard}</td>
-                <td className="px-6 py-4 whitespace-nowrap dark:text-gray-300">{hardSolvedPercentage}%</td>
-              </tr>
-            </tbody>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap">
+      <div className="flex items-center">
+        <div className="h-3 w-3 rounded-full bg-success-500 mr-2"></div>
+        <span style={{ color: '#000000' }} className="font-medium">Easy</span>
+      </div>
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{userData.easySolved}</td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{userData.totalEasy}</td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{easySolvedPercentage}%</td>
+  </tr>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap">
+      <div className="flex items-center">
+        <div className="h-3 w-3 rounded-full bg-warning-500 mr-2"></div>
+        <span style={{ color: '#000000' }} className="font-medium">Medium</span>
+      </div>
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{userData.mediumSolved}</td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{userData.totalMedium}</td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{mediumSolvedPercentage}%</td>
+  </tr>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap">
+      <div className="flex items-center">
+        <div className="h-3 w-3 rounded-full bg-error-500 mr-2"></div>
+        <span style={{ color: '#000000' }} className="font-medium">Hard</span>
+      </div>
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{userData.hardSolved}</td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{userData.totalHard}</td>
+    <td className="px-6 py-4 whitespace-nowrap" style={{ color: '#000000' }}>{hardSolvedPercentage}%</td>
+  </tr>
+</tbody>
+
           </table>
         </div>
       </div>
