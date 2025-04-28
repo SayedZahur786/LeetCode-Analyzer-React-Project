@@ -20,7 +20,7 @@ function Footer() {
               <FaLinkedin size={24} />
             </a>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:contact@syedzahurulhasan04@gmail.com" 
               className="text-gray-300 hover:text-white transition-colors"
             >
               <FaEnvelope size={24} />
@@ -37,7 +37,6 @@ function Footer() {
         </div>
         
         <div className="mt-8 pt-4 border-t border-gray-700 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} LeetCode Stats Analyzer. All rights reserved.</p>
           <p className="mt-1">Created by Mohd Jahur (Sayed Zahur) Zaidi</p>
         </div>
       </div>
